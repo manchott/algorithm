@@ -2,7 +2,7 @@ L = []
 for i in range(9):
     L.append(int(input()))
 
-for i in range(8):
+for i in range(9):
     for j in range(i + 1, 9):
         total = sum(L)
         total -= L[i] + L[j]
