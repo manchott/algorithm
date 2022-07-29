@@ -1,7 +1,3 @@
-import sys
-sys.setrecursionlimit(10**6)
-
-
 def draw_star(n):
     if n == 1:
         return ['*']
@@ -10,13 +6,10 @@ def draw_star(n):
     L = []
 
     for star in Stars:
-        print(star)
         L.append(star*3)
     for star in Stars:
-        print(star)
         L.append(star+' '*(n//3)+star)
     for star in Stars:
-        print(star)
         L.append(star*3)
 
     return L
